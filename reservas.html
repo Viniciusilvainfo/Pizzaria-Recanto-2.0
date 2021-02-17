@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Recanto - Reservas</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="barra-navegação" id="navegação" onmouseover="hover(0)" onmouseout="hover(1)">
+        <div class="home">
+            <h1 class="oculto" id="h1">Recanto da Pizza</h1>
+        </div>
+        <div class="lista-menu">
+            <ul>
+                <li>
+                    <a href="index.html#titleMenu">Cardápio</a>
+                </li>
+                <li>
+                    <a href="pedidos.html">Pedidos</a>
+                </li>
+                <li>
+                    <a href="index.html#sobreNos">Sobre</a>
+                </li>
+            </ul>
+        </div>
+        <div class="home">
+            <button type="button" onclick="clicado()">
+                Menu
+            </button>
+        </div>
+    </nav>
+
+    <div class="content oculto" id="collapse" onmouseover="hover(2)" onmouseout="hover(3)">
+        <ul>
+            <li>
+                <a href="index.html#titleMenu">Cardápio</a>
+            </li>
+            <li>
+                <a href="pedidos.html">Pedidos</a>
+            </li>
+            <li>
+                <a href="index.html#sobreNos">Sobre nós</a>
+            </li>
+        </ul>
+    </div>
+    <h1 class="h1">Faça sua reserva online</h1>
+    <form action="">
+        Nome:
+        <input type="text" name="" id="">
+        Email:
+        <input type="email" name="" id="">
+        Data:
+        <input type="date" name="" id="">
+        Horário:
+        <input type="time" name="" id="">
+        Quantidade de pessoas:
+        <input type="number" name="" id="" max="8" min="1">
+        Observações:
+        <textarea name="" id="" cols="30" rows="5"></textarea>
+        <button type="submit">Reservar</button>
+    </form>
+
+    <div class="rodape">
+        <a href="https://github.com/Viniciusilvainfo" target="_blank">Conheça meu Github</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

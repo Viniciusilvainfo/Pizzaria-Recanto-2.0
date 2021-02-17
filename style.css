@@ -1,0 +1,379 @@
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+body {
+    background-image: url('imagens/pizza-fundo.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+::selection {
+    background-color: red;
+}
+
+li>a:hover, #reserva:hover, #pedido:hover, .rodape>a:hover {
+    color: green;
+}
+
+/* INÍCIO CONTEÚDO BARRA DE NAVEGAÇÃO */
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    opacity: 0.6;
+    height: 5em;
+}
+
+/* conteúdos da barra de navegação */
+.lista-menu, .home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.home {
+    width: 29%;
+    position: relative;
+}
+
+.lista-menu {
+    width: 42%;
+}
+
+/* lista  na barra de navegação */
+nav ul {
+    display: flex;
+    min-width: 100%;
+    height: 100%;
+}
+
+nav ul li {
+    align-self: center;
+    text-align: center;
+    min-width: 33%;
+}
+
+/* botão responsivo */
+nav button {
+    display: none;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    margin-right: 1em;
+    border-radius: 1em;
+    width: 10vw;
+    height: 50%;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #ccc;
+}
+/* FIM CONTEÚDO BARRA DE NAVEGAÇÃO */
+
+/* DIV COLLAPSE */
+.oculto {
+    display: none;
+}
+
+.visivel {
+    display: block;
+}
+
+.content {
+    padding: 1em 0vw 5em 5vw;
+    max-height: 10px;
+    background-color: black;
+    opacity: 0.6;
+}
+
+.opacidade {
+    opacity: 0.8;
+}
+
+a:nth-child(1) {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+/* FIM DIV COLLAPSE */
+
+/* TÍTULO E BOTÃO*/
+.titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 8% auto;
+    text-align: center;
+    text-shadow: 1px 2px black;
+    color: white;
+}
+
+.titulo>p {
+    font-size: 8vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.button {
+    display: block;
+    width: 80%;
+    margin-top: 2em;
+    background-color: black;
+    color: white;
+    height: 3em;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 1em;
+}
+
+.hidden {
+    display: none;
+}
+
+/* FUNCIONAMENTO */
+.funcionamento {
+    color: white;
+    font-size: 0.8em;
+    height: 3em;
+}
+
+.funcionamento>h1 {
+    background-color: black;
+    display: inline-block;
+    height: 80%;
+    padding: 0 1em;
+}
+
+.title-content {
+    font-size: 5vw;
+    text-align: center;
+    padding: 0.5em 0;
+    color: white;
+}
+
+/* CARDÁPIO*/
+.content-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-cardapio {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.botões {
+    display: flex;
+    flex-direction: row;
+    margin: 3em 14vw 0 14vw;
+}
+
+
+
+#conteudo-cardapio {
+    display: block;
+    background-color: white;
+    color: black;
+    margin: 0 14vw 4em 14vw;
+    padding: 1em;
+}
+
+#conteudo-cardapio p {
+    margin-bottom: 1em;
+    padding: 1.2em;
+}
+
+span {
+    float: right;
+}
+
+.cardápio-botão {
+    background-color: black;
+    border: 1px solid white;
+    width: 24vw;
+    height: 3em;
+    font-size: 1.5em;
+    color: white;
+}
+
+.active {
+    background-color: red;
+}
+
+.cardápio-botão:hover {
+    background-color: red;
+}
+
+/* SOBRE NÓS */
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+}
+
+.paragrafo {
+    width: 60%;
+    margin: 3em auto 1em auto;
+    text-indent: 30px;
+    padding: 0 1em;
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+.img {
+    max-width: 60%;
+    margin: auto;
+    margin-bottom: 4em;
+}
+
+/* RODAPÉ */
+.rodape {
+    background-color:rgba(0,0,0,0.6);
+    color: white;
+    text-align: center;
+    padding: 1em;
+    font-size: 1.2em;
+}
+
+/* media queries */
+@media (max-width:768px) {
+    .home {
+        width: 66%;
+    }
+    .lista-menu {
+        display: none;
+    }
+    nav button {
+        display: block;
+    }
+    .titulo {
+        margin: 20% auto;
+    }
+    #h1 {
+        display: flex;
+        margin-left: 10px;
+    }
+    .titulo>p {
+        font-size: 10vw;
+    }
+    .botões{
+        margin: 2em 1em 0 1em;
+    }
+    .paragrafo {
+        margin-top: 2em;
+    }
+    .cardápio-botão {
+        width: 34%;
+    }
+    #conteudo-cardapio {
+        margin: 0 1em 3em 1em;
+    }
+    .img {
+        margin-bottom: 3em;
+    }
+    .paragrafo {
+        font-size: 1em;
+        text-overflow: clip;
+        text-indent: 60px;
+    }
+}
+
+@media (min-width:769px) {
+    .content {
+        display: none;
+    }
+}
+
+form {
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    padding: 2em;
+    font-size: 1.1em;
+    border-radius: 3em;
+    margin-bottom: 2em;
+}
+
+input,
+textarea {
+    padding: 0.5em;
+    margin: 0.8em 0;
+    font-size: 1.1em;
+}
+
+input {
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+textarea {
+    resize:none;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.content-cardapio h2 {
+    text-align: center;
+    color: white;
+    margin-top: 1em;
+    margin-bottom: -1em;
+}
+
+.avancar {
+    width: 33%;
+    margin: -2em auto 2em auto;
+    background-color: white;
+    padding: 0.8em;
+    font-size: 1.2em;
+}
+
+.margintop {
+    margin-top: 4em;
+}
+
+form button {
+    width: 33%;
+    margin: 2em auto 0 auto;
+    padding: 0.7em;
+    background-color: white;
+    font-size: 1em;
+}
+
+.h1 {
+    text-align: center;
+    color: white;
+    margin: 1em auto;
+}

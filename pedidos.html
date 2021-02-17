@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Recanto - Pedidos</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="barra-navegação" id="navegação" onmouseover="hover(0)" onmouseout="hover(1)">
+        <div class="home">
+            <h1 class="oculto" id="h1">Recanto da Pizza</h1>
+        </div>
+        <div class="lista-menu">
+            <ul>
+                <li>
+                    <a href="#conteudo-cardapio">Cardápio</a>
+                </li>
+                <li>
+                    <a href="#">Pedidos</a>
+                </li>
+                <li>
+                    <a href="index.html#sobreNos">Sobre</a>
+                </li>
+            </ul>
+        </div>
+        <div class="home">
+            <button type="button" onclick="clicado()">
+                Menu
+            </button>
+        </div>
+    </nav>
+
+    <div class="content oculto" id="collapse" onmouseover="hover(2)" onmouseout="hover(3)">
+        <ul>
+            <li>
+                <a href="#conteudo-cardapio">Cardápio</a>
+            </li>
+            <li>
+                <a href="#">Pedidos</a>
+            </li>
+            <li>
+                <a href="index.html#sobreNos">Sobre nós</a>
+            </li>
+        </ul>
+    </div>
+    <h1 class="h1">Faça seu Pedido</h1>
+    <div class="content-menu">
+        <div class="content-cardapio">
+            <h2>Selecione as pizzas que desejar</h2>
+            <div class="botões">
+                <button id="btn1" class="cardápio-botão active" onclick="cardapio(1)">Pizzas</button>
+                <button id="btn2" class="cardápio-botão" onclick="cardapio(2)">Pizzas Doces</button>
+                <button id="btn3" class="cardápio-botão" onclick="cardapio(3)">Massas & lasanhas</button>
+            </div>
+            <div id="conteudo-cardapio">
+                <h1 onclick="pedidos(this, 35.90)" id='frango'>Frango<span>R$ 35,90</span></h1>
+                <p>Catupiry, Frango e Tomate</p>
+
+                <h1 onclick="pedidos(this, 30.90)" id='calabresa'>Calabresa<span>R$ 30,90</span></h1>
+                <p>Muçarela, Calabresa, Cebola e Tomate</p>
+
+                <h1 onclick="pedidos(this, 32.90)" id='quatroqueijos'>4 Queijos<span>R$ 32,90</span></h1>
+                <p>Muçarela, Provolone, Catupiry e Gorgonzola</p>
+
+                <h1 onclick="pedidos(this, 42.90)" id='file'>Filet Mignon<span>R$ 42,90</span></h1>
+                <p>Muçarela, Filet e Cebola</p>
+
+                <h1 onclick="pedidos(this, 34.90)" id='portuguesa'>Portuguesa<span>R$ 34,90</span></h1>
+                <p>Muçarela, Polpa de Tomate, Cebola e Azeitonas</p>
+
+                <h1 onclick="pedidos(this, 30.90)" id='napolitana'>Napolitana<span>R$ 30,90</span></h1>
+                <p>Muçarela, Manjericão e Tomate</p>
+            </div>
+            <button id="avancar" class="avancar">Avançar</button>
+        </div>
+    </div>
+
+    <div class="rodape margintop">
+        <a href="https://github.com/Viniciusilvainfo" target="_blank">Conheça meu Github</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Recanto</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="play()">
+
+    <nav class="barra-navegação" id="navegação" onmouseover="hover(0)" onmouseout="hover(1)">
+        <div class="home">
+            <h1 class="oculto" id="h1">Recanto da Pizza</h1>
+        </div>
+        <div class="lista-menu">
+            <ul>
+                <li>
+                    <a href="#titleMenu">Cardápio</a>
+                </li>
+                <li>
+                    <a id="pedido1">Pedidos</a>
+                </li>
+                <li>
+                    <a href="#sobreNos">Sobre</a>
+                </li>
+            </ul>
+        </div>
+        <div class="home">
+            <button type="button" onclick="clicado()">
+            Menu
+            </button>
+        </div>
+    </nav>
+
+    <div class="content oculto" id="collapse" onmouseover="hover(2)" onmouseout="hover(3)">
+        <ul>
+            <li>
+                <a href="#">Cardápio</a>
+            </li>
+            <li>
+                <a href="#">Pedidos</a>
+            </li>
+            <li>
+                <a href="#">Sobre nós</a>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="titulo">
+        <p> Recanto da Pizza </p>
+        <button id="reserva" class="button">
+            Faça sua reserva
+        </button>
+        <button id="pedido" class="hidden">
+            Faça seu pedido
+        </button>
+    </div>
+
+    <div class="funcionamento">
+        <h1>Aberto das 18h às 23h</h1>
+    </div>
+
+    <div class="content-menu">
+        <h1 class="title-content" id="titleMenu">CARDÁPIO</h1>
+        <div class="content-cardapio">
+            <div class="botões">
+                <button id="btn1" class="cardápio-botão active" onclick="cardapio(1)">Pizzas</button>
+                <button id="btn2" class="cardápio-botão" onclick="cardapio(2)">Pizzas Doces</button>
+                <button id="btn3" class="cardápio-botão" onclick="cardapio(3)">Massas & lasanhas</button>
+            </div>
+            <div id="conteudo-cardapio">
+                <h1>Frango<span>R$ 35,90</span></h1>
+                <p>Catupiry, Frango e Tomate</p>
+                
+                <h1>Calabresa<span>R$ 30,90</span></h1>
+                <p>Muçarela, Calabresa, Cebola e Tomate</p>
+                
+                <h1>4 Queijos<span>R$ 32,90</span></h1>
+                <p>Muçarela, Provolone, Catupiry e Gorgonzola</p>
+                
+                <h1>Filet Mignon<span>R$ 42,90</span></h1>
+                <p>Muçarela, Filet e Cebola</p>
+                
+                <h1>Portuguesa<span>R$ 34,90</span></h1>
+                <p>Muçarela, Polpa de Tomate, Cebola e Azeitonas</p>
+                
+                <h1>Napolitana<span>R$ 30,90</span></h1>
+                <p>Muçarela, Manjericão e Tomate</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content-menu">
+        <h1 class="title-content" id="sobreNos">SOBRE NÓS</h1>
+        <div class="card">
+            <p class="paragrafo">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci exercitationem ab sit recusandae! Voluptas voluptatum beatae culpa autem cupiditate eligendi fuga maxime, nostrum adipisci dignissimos odit nihil nisi, quidem vitae!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos ullam harum minima nobis maxime nam omnis praesentium necessitatibus sit! Similique earum ad, quae iure at accusantium inventore mollitia hic reprehenderit.
+            </p>
+            <img id="imageSlide" class="img" src="imagens/foto-3.jpg">
+        </div>
+
+        <h1 class="title-content">VENHA CONHECER NOSSA PIZZARIA</h1>
+    </div>
+
+    <div class="rodape">
+        <a href="https://github.com/Viniciusilvainfo" target="_blank">Conheça meu Github</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
